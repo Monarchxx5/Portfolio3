@@ -1,0 +1,288 @@
+body {
+    background-color: #49A078;
+}
+.navbar-nav{
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+#navtext{
+    color: #F0F9F4;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    font-size: 1.5rem;
+    border-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #FFD166; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+
+a:hover {
+    color: #FFB833;
+    border-bottom: 2px solid #FFB833;
+  }
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+.name{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+
+}
+.section{
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: lighter;
+}
+
+#BtnPortfolio{
+    background-color: #1C6047;
+    color: #F0F9F4;
+    border-radius: 20px;
+}
+
+
+.CV-Title{
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F0F9F4;  
+    font-size: 24px;   
+}
+
+.carousel-inner{
+    width: 500px;
+    height: 100vh;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    background-color: #9CC5A1;
+    object-fit: cover;
+}
+
+#myPhoto{
+    top: 50%;
+    height: 288.55px;
+    width: 442px;
+    object-fit: cover;
+}
+
+.skills
+{
+    
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding-top: 10px;
+    
+}
+
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background: #D9D9D9;
+}
+
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #1C6047;
+}
+
+#footerBackground {
+    background-color: #DAF1E3;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.title3{
+    font-weight: bolder;
+}
+
+.subject-card {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subject-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.year-label {
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.subject-title {
+    background-color: #1C6047;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+.footer a {
+    color: #0B231B;
+    margin: 0 10px;
+}
+
+.c-item {
+    height: 480px;
+  }
+  
+.c-img {
+    height: 100%;
+    filter: brightness(0.6);
+    object-fit: cover;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+  /* Media Queries for Carousel Image Scaling */
+@media (max-width: 425px) {
+    .col-4 {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .year-label {
+        text-align: center;
+        font-weight: lighter;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .subject-card {
+        height: auto;
+        width: 100%;
+    }
+    .subject-title{
+        font-size: x-small;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1025px) {
+    .carousel-item img {
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+/* Customize navbar for mobile */
+.navbar-toggler-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.subject-card img {
+    width: 100%;
+    height: auto;
+}
+
+.subject-card {
+    margin-bottom: 20px;
+}
+
+
+.portfolio-container {
+    padding: 20px;
+}
+
+@media (min-width: 475px) {
+    .portfolio-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 640px) {
+    .portfolio-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .portfolio-container {
+        width: 60%;
+    }
+}
